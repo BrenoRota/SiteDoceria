@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Érika Rota Bolos</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 21px; /* aumento moderado */
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .container-principal {}
+
+    .row.no-gutters {
+      margin-left: 0;
+      margin-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row.no-gutters > [class^="col-"],
+    .row.no-gutters > [class*=" col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .section-fullscreen {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+      width: 100vw;
+    }
+
+    .bg-rosa-claro {
+      background-color: #fee6ec;
+    }
+
+    .bg-bege-claro {
+      background-color: #f3e8f0;
+    }
+
+    .text-marrom {
+      color: #77392E;
+    }
+
+    .text-rosa {
+      color: #e06d95;
+    }
+
+    .img-bolo {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .px-5 {
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+    }
+
+    .col-md-6.px-5 {
+      padding-right: 5rem !important;
+    }
+
+    /* Estilo tipográfico */
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      letter-spacing: 0.03em;
+    }
+
+    h5 {
+      font-size: 1.4rem;
+      letter-spacing: 0.03em;
+    }
+
+    p,
+    li {
+      font-size: 1.1rem;
+      letter-spacing: 0.02em;
+    }
+
+    hr {
+      border-top: 1px solid #d8a1b4;
+    }
+
+    .list-unstyled {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list-unstyled li {
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 20px;
+      }
+
+      .px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+
+      .section-fullscreen {
+        padding: 30px 0;
+      }
+
+      .img-bolo {
+        margin-top: 20px;
+      }
+
+      .col-md-6.px-5 {
+        padding-right: 1rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-principal">
+
+    <!-- Seção 1: Nossa História -->
+    <div class="row no-gutters section-fullscreen bg-rosa-claro">
+      <div class="text-center mb-5" style="width: 100%;">
+        <h2 class="text-marrom"><b>Nossa História</b></h2>
+        <p class="text-muted">Conheça a tradição por trás de cada doce</p>
+      </div>
+
+      <div class="row no-gutters align-items-center" style="width: 100%;">
+        <div class="col-md-6 px-5">
+          <h4 class="text-rosa"><b>Uma paixão que virou tradição</b></h4>
+          <p>Há mais de 10 anos, a Érika Rota Bolos nasceu com o desejo de tornar cada momento especial em algo inesquecível. Com receitas artesanais, muita dedicação e carinho, crescemos mantendo o sabor e a tradição caseira.</p>
+          <p>Nossos bolos representam mais que sobremesas – são memórias afetivas feitas com ingredientes selecionados, criatividade e amor.</p>
+          <ul class="list-unstyled text-rosa">
+            <li>🎂 Feito com carinho</li>
+            <li>🏅 Qualidade premium</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center px-5">
+          <img src="/img/bolos/bolo1.jpg" alt="Bolo decorado" class="img-bolo">
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção 2: Missão, Visão e Valores -->
+    <div class="row no-gutters section-fullscreen bg-bege-claro">
+      <div class="text-center mb-5" style="width: 100%;">
+        <h2 class="text-marrom"><b>Missão, Visão e Valores</b></h2>
+      </div>
+
+      <div class="row no-gutters align-items-center flex-row-reverse" style="width: 100%;">
+        <div class="col-md-6 px-5">
+          <div class="mb-4">
+            <h5 class="text-rosa"><b>Missão</b></h5>
+            <p>Encantar nossos clientes com bolos artesanais feitos com amor, utilizando ingredientes de qualidade e respeito às tradições da confeitaria.</p>
+          </div>
+
+          <hr>
+
+          <div class="mb-4">
+            <h5 class="text-rosa"><b>Visão</b></h5>
+            <p>Ser reconhecida como referência em bolos personalizados e sabor artesanal, mantendo um compromisso constante com a excelência.</p>
+          </div>
+
+          <hr>
+
+          <div>
+            <h5 class="text-rosa"><b>Valores</b></h5>
+            <ul class="list-unstyled text-rosa">
+              <li>❤️ Paixão pelo que fazemos</li>
+              <li>🤝 Respeito ao cliente</li>
+              <li>🌱 Sustentabilidade e ética</li>
+              <li>🎨 Criatividade e inovação</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 text-center px-5">
+          <img src="/img/bolos/bolo2.jpg" alt="Missão e valores" class="img-bolo">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

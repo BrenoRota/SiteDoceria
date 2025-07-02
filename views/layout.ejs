@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Érika Rota Bolos</title>
+
+  <!-- Google Fonts -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&family=Pacifico&display=swap"
+  />
+
+  <!-- Font Awesome -->
+  <link href="/css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- AdminLTE -->
+  <link rel="stylesheet" href="/css/adminlte.min.css" />
+
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      padding-top: 160px;
+    }
+
+    .main-header,
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1050;
+    }
+
+    .main-header {
+      background-color: #fff;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar-center-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 14px;
+    }
+
+    .navbar-center-title img {
+      height: 95px;
+      border-radius: 12px;
+    }
+
+    .navbar-center-title span {
+      font-family: 'Pacifico', cursive;
+      font-size: 42px;
+      font-weight: normal;
+      color: #e06d95;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-center-title span:hover {
+      transform: scale(1.05);
+      color: #d4497e;
+    }
+
+    .navbar-icons-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-right: 20px;
+    }
+
+    .navbar-icons-right a {
+      color: #000;
+      font-size: 22px;
+    }
+
+    .nav-menu {
+      background-color: #fdfdfd;
+      border-bottom: 1px solid #ddd;
+      top: 100px;
+    }
+
+    .nav-menu .nav-link {
+      color: #444;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 12px 20px;
+    }
+
+    .nav-menu .nav-link:hover {
+      color: #e06d95;
+      text-decoration: underline;
+    }
+
+
+
+
+    /* Espaço apenas do lado direito do conteúdo */
+    .content-wrapper .container-fluid {
+      padding-right: 50px;
+    }
+  </style>
+</head>
+<body class="hold-transition layout-top-nav">
+  <div class="wrapper">
+    <!-- Navbar Superior -->
+    <nav class="main-header navbar navbar-expand-lg navbar-light">
+      <div style="width: 40px;"></div>
+
+      <div class="navbar-center-title">
+        <img src="/img/ImagensLayout/imagem2.png" alt="Logo Doceria" />
+        <span>Érika Rota Bolos</span>
+      </div>
+
+      <div class="navbar-icons-right ml-auto">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </nav>
+
+    <!-- Menu de Navegação -->
+    <div class="nav-menu shadow-sm">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content-wrapper" style="background-color: #FEEEC3;">
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="content">
+        <div class="container-fluid">
+          <div class="card custom-card">
+            <%- body %>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="control-sidebar control-sidebar-dark"></aside>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/jquery/jquery.min.js"></script>
+  <script src="/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/adminlte.min.js"></script>
+</body>
+</html>
