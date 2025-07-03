@@ -1,9 +1,8 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const cookieParser = require("cookie-parser")
-
-const ClienteRoute = require("./routes/clientesroute")
-
+const HomeCliRoute = require("./routes/clientesroute")
+const CliprodutosRoute = require("./routes/clientesprodutos");
 const app = express();
 
 app.use(express.static(__dirname + "/public"));
@@ -19,8 +18,8 @@ app.set('layout', './layout');
 app.use(expressLayouts);
 app.use(cookieParser());
 
-app.use("/",ClienteRoute)
-
+app.use("/", HomeCliRoute)
+app.use("/clientes",CliprodutosRoute)
 
 const server = app.listen('5000', function() {
     console.log('Servidor web iniciado');
